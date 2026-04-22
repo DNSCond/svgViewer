@@ -1,4 +1,4 @@
-<?php use ANTHeader\ANTNavLinkTag;
+<?php use ANTHeader\ANTNavIStyle;
 use function ANTHeader\ANTNavFavicond;
 use function ANTHeader\create_head2;
 
@@ -12,7 +12,7 @@ function htmlEncodeMinimal(string $value): string
 
 require_once "{$_SERVER['DOCUMENT_ROOT']}/require/createHead2.php";
 create_head2($title = 'SVGViewer', ['base' => '/svgViewer/',
-], [new ANTNavLinkTag('stylesheet', ['style.css']),
+], [new ANTNavIStyle('textarea{width:100%;}img{max-width:100%;}'),
 ], [ANTNavFavicond('https://ANTRequest.nl', $title, true)]) ?>
 <div class=divs>
     <div>
